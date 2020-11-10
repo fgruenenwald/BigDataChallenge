@@ -1,5 +1,7 @@
 #*******************************************************************************
 # ANALYSIS OF OBESITY TRENDS USA
+#*******************************************************************************
+
 
 #------------load the data from the clean data folder---------------------------
 #load data forthe US
@@ -113,3 +115,43 @@ cor(frequencyTableForEstablishmentNew$x.Freq, as.numeric(obesityUSAAfter14BothSe
 # inconclusive, it definitely gives us hints on how our data might look if we have a
 # bigger data set
 #------------------------------------------------------------------------------------
+
+
+#================================================================================
+#--------------------------two sample t test---------------------------------
+
+# The frequency of established restaurant on 2014, 2015 and 2016 respectively
+frequencyTableForEstablishmentNew$x.Freq
+
+# The frequency of obesity rate of both sexes on 2014, 2015 and 2016
+# respectively
+as.numeric(obesityUSAAfter14BothSexes$Obesity....)
+
+# Creating a table using the frequencies from above
+tableForTTest <- cbind(frequencyTableForEstablishmentNew$x.Freq,
+                       as.numeric(obesityUSAAfter14BothSexes$Obesity....))
+
+# Assigning column name for the table
+colnames(tableForChiSquared) <- c('ffRestaurant', 'obesityRate')
+
+# Assigning row name for the table
+rownames(tableForChiSquared) <- c('2014', '2015', '2016')
+tableForChiSquared
+
+# Performing two sample t test. 
+t.test(frequencyTableForEstablishmentNew$x.Freq,
+       as.numeric(obesityUSAAfter14BothSexes$Obesity....), alternative = "two.sided", 
+       var.equal = FALSE)
+
+# t = 1.7398, df = 2, p-value = 0.224
+# alternative hypothesis: true difference in means is not equal to 0
+# 95 percent confidence interval:
+#  -1949.503  4596.369
+# sample estimates:
+#  mean of x  mean of y 
+# 1359.00000   35.56667 
+
+# Since the p-value is 0.224, i.e. greater than 0.05 (or 5 percent), it can be concluded 
+# that there is no difference between the means. This indicated that the mean of rate of obesity 
+# increase is same as the means of increasing number of restaurant per year, which supports our 
+# hypothesis.
