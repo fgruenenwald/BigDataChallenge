@@ -8,8 +8,11 @@ obesityUSA <- read.csv(paste( path.data.clean,
 #load data for france
 obesityFrance <- read.csv(paste( path.data.clean,
                                  'fr.obesity1975.cleaned.csv', sep=""))
+#------------------------------------------------------------------------------------
 
-#-----------------seperating categories-----------------------------------------
+#================================================================================
+
+#-----------------seperating categories of obesity rate---------------------------
 # Filtering the obesity rate of male 
 maleObesity <- obesityUSA %>% filter(Sex == 'Male')
 maleObesity
@@ -27,7 +30,6 @@ bothSexesObesityFrance <- obesityFrance %>% filter(Sex == 'Both sexes')
 # from all sexes
 
 
-
 # Extracting the rate of Obesity in Men
 maleObesity$Obesity.... <- gsub(' .*', '', maleObesity$Obesity....)
 maleObesity
@@ -42,17 +44,72 @@ FemaleObesityFrance$Obesity.... <- gsub(' .*', '',
 bothSexesObesity$Obesity.... <- gsub(' .*', '', bothSexesObesity$Obesity....)
 bothSexesObesityFrance$Obesity.... <- gsub(' .*', '',
                                            bothSexesObesityFrance$Obesity....)
-obesityUSA
+#------------------------------------------------------------------------------------
 
+#================================================================================
 
+#-----------------------checking the quantile for the USA---------------------------
 
 # Checking the quantile of the all group in the USA
 quantile(as.numeric(maleObesity$Obesity....))
 quantile(as.numeric(FemaleObesity$Obesity....))
 quantile(as.numeric(bothSexesObesity$Obesity....))
 
+# From above data we find out that the 50% of male have the obesity rate of approx
+# 21% or below whereas approx 50% of the female have the obesity rate of
+# 24% or below. This shows us that the female have more obesity than men in
+# USA.
+
+#------------------------------------------------------------------------------------
+
+#-----------------------checking the quantile for France---------------------------
+
 # Checking the quantile of the all group in France
 quantile(as.numeric(maleObesityFrance$Obesity....))
 quantile(as.numeric(FemaleObesityFrance$Obesity....))
 quantile(as.numeric(bothSexesObesityFrance$Obesity....))
 
+# From above data we find out that the 50% of male have the obesity rate of
+# 13% or below whereas approx 50% of the female have the obesity rate of
+# 15% or below. This shows us that the female have more obesity than men in
+# France. However, the it also says that 100% male have the obesity rate of
+# 22% or lower whereas women have approx 21% or lower. This indicates that
+# over the years the obesity in the women has decreased or is comparitevely
+# smaller than men in France.
+#------------------------------------------------------------------------------------
+
+
+#================================================================================
+#
+#------------measuring the correlation coefficent---------------------------
+
+# Seperating our obesity data in order to match the data of the established 
+# number of restaurant per year
+obesityUSAAfter14 <- obesityUSA %>% filter(Year >= 2014)
+
+# Using the Obesity data to filter out the Both Sexes category of Sex. This is 
+# because it gives us the average for the Male and Female population.
+obesityUSAAfter14BothSexes <- obesityUSAAfter14 %>% filter(Sex == 'Both sexes')
+obesityUSAAfter14BothSexes$Obesity....
+
+# Creating a table that consists the number of total retaurant established that year
+yearOfEstablishmentTable <- table(yearOfEstablishment)
+
+# Using that table to create a frequency table because it helps us to filter our data
+# for all the year before 2016 easily. We are only extracting the number of restaurant
+# established from 2014-2016 to match it with the data from obesity data above.
+frequencyTableForEstablishment <- count(yearOfEstablishmentTable)
+
+# Filtering our data
+frequencyTableForEstablishmentNew <- frequencyTableForEstablishment %>% filter(as.numeric(as.character(frequencyTableForEstablishment$x.yearOfEstablishment)) <= 2016)
+
+
+# Using the two different data: obesity and the numbers of fast food restaurant
+# established to see the correlation between them. 
+cor(frequencyTableForEstablishmentNew$x.Freq, as.numeric(obesityUSAAfter14BothSexes$Obesity....) , method = "pearson")
+# Correlation is 0.9993099. This points out that our two datasets have positive linear relationship.
+# However, this result cannot be true. It is because we didn't have enough data to
+# test the correlation coefficient between the two variable. Even if this test is 
+# inconclusive, it definitely gives us hints on how our data might look if we have a
+# bigger data set
+#------------------------------------------------------------------------------------
