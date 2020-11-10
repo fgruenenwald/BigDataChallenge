@@ -133,7 +133,7 @@ dev.off()
 #* this function will take in a list of response variables, and a list of 
 #* explanatory variables.
 #* The output will be a list data frame with variables and test values 
-exp.variables <- c(rest.exp, soc.exp, hlt.exp )
+exp.variables <- c(rest.exp, soc.exp, hlt.exp[1:2], hlt.exp[5:length(hlt.exp)])
 resp.variables <- c(var.resp)
 
 
@@ -228,6 +228,12 @@ for (r in 1: length(resp.variables)){
   }
 }
 fea.rslts <-na.omit(fea.rslts)
-write.csv(fea.rslts, paste(path.results, 'ObesityCorrelations.csv'))
 
+#find the factors with maximal correlation by showing the results ordered by 
+#descending absolute correlation estimates:
+fea.rslts <- fea.rslts[order(abs(fea.rslts$correlation.estimate), 
+                             decreasing= TRUE),]
+
+write.csv(fea.rslts, paste(path.results, 'ObesityCorrelations2012.csv'))
+?order
 
