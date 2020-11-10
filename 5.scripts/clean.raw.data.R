@@ -1,6 +1,7 @@
 
 #---------------Cleaning the world wide obesity data---------------------------
-obesity <-
+obesity <- read.csv(paste( path.data.raw,
+                           'obesity.per.country.1975.csv', sep=""))
 
 # Since our Obesity data has all the countries data, we filter the data
 # of the USA using the filter function.
@@ -20,7 +21,7 @@ obesityUSA #show clean data table
 # Creating a table containing Year, Obesity rate and Sex.
 obesityUSA <- obesityUSA %>% group_by(Year, Obesity...., Sex)%>%
   dplyr::summarise(count = n())
-
+obesityUSA
 # Filtering the obesity rate of male 
 maleObesity <- obesityUSA %>% filter(Sex == 'Male')
 # Filtering the obesity rate of Female
