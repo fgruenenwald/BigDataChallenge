@@ -56,3 +56,37 @@ quantile(as.numeric(maleObesityFrance$Obesity....))
 quantile(as.numeric(FemaleObesityFrance$Obesity....))
 quantile(as.numeric(bothSexesObesityFrance$Obesity....))
 
+#==============================================================================
+
+fastFoodClean <- read.csv(paste(path.data.clean, 'fastFoodRestaurantClean.csv',
+                                sep = ""))
+
+# Creating a table that consists the number of total retaurant established that year
+yearOfEstablishmentTable <- table(fastFoodClean$dateEstablished)
+yearOfEstablishmentTable
+
+# Seperating our obesity data in order to match the data of the established number of restaurant per year
+obesityUSAAfter14 <- obesityUSA %>% filter(Year >= 2014)
+
+# Using the Obesity data to filter out the Both Sexes category of Sex. This is because
+# It gives us the average for the Male and Female population.
+obesityUSAAfter14BothSexes <- obesityUSAAfter14 %>% filter(Sex == 'Both sexes')
+obesityUSAAfter14BothSexes$Obesity....
+
+# Using that table to create a frequency table because it helps us to filter our data
+# for all the year before 2016 easily. We are only extracting the number of restaurant
+# established from 2014-2016 to match it with the data from obesity data above.
+frequencyTableForEstablishment <- count(yearOfEstablishmentTable)
+
+# Filtering our data
+frequencyTableForEstablishmentNew <- frequencyTableForEstablishment %>% filter(as.numeric(as.character(frequencyTableForEstablishment$x.Var1)) <= 2016)
+
+
+# Using the two different data: obesity and the numbers of fast food restaurant
+# established to see the correlation between them. 
+cor(frequencyTableForEstablishmentNew$x.Freq, as.numeric(obesityUSAAfter14BothSexes$Obesity....) , method = "pearson")
+# Correlation is 0.9993099. This points out that our two datasets have positive linear relationship.
+# However, this result cannot be true. It is because we didn't have enough data to
+# test the correlation coefficient between the two variable. Even if this test is 
+# inconclusive, it definitely gives us hints on how our data might look if we have a
+# bigger data set

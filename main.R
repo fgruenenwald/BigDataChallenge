@@ -78,17 +78,30 @@ path.results <- paste(wk.dir, "/", folder.names[3], "/", sep = "")
 path.fig <- paste(wk.dir, "/", folder.names[4], "/", sep = "")
 # ==============================================================================
 # --- run scripts ---
-#run getting.to.know.weathercan.R to load data, and make figures
 
+# This source analyses different obesity trends in the USA and France and
+# compares their graph
 source(paste(wk.dir,"/" ,"5.scripts", "/", "analysis_obesity_trends_us_fr.R",
              sep = ""))
+
+# This source creates the graph of different obesity and saves them in figures.
 source(paste (wk.dir, "/", "5.scripts", "/", "visualizing.obesity.trends.R", 
               sep = ""))
+
+# This source creates the map of the distrivbution of the new established
+# restauarant all across  the US. You have to save this file manually,
+# because trying to save pdf gives you an error saying "the map has
+# no pages".
 source(paste (wk.dir, "/", "5.scripts", "/", 
               "visualizing.fastFoodRestaurants.R", 
               sep = ""))
 
-#consider confounding variables and other factors
+# Creates graphs of correlation between restaurant accessibility variable
+# socio economic variable and health variables and how they relate to obesity
+# rates. It also performs correlation test between these variables
+# and saves it as obesityCorrelations in the results folder.
+# The graphs are saved in the figures folder.
+# consider confounding variables and other factors
 source(paste (wk.dir, "/", "5.scripts", "/", "VisualAnalyzeFoodEnvironment2.R",
               sep = ""))
 
