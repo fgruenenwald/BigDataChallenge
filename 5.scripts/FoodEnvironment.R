@@ -2,11 +2,11 @@
 
 #load the data------------------------------------------------------------------
 #load health, food and environment related data for counties in the US
-my.data <- read.csv('obesity/FoodEnvironmentAtlas/StateAndCountyData.csv',
+my.data <- read.csv(,
                     strip.white = TRUE, stringsAsFactors = FALSE)
 
 #load variable names and descriptions
-variables <- read.csv('obesity/FoodEnvironmentAtlas/VariableList.csv')
+variables <- read.csv(paste('FoodEnvironmentAtlas/VariableList.csv'))
 
 #explore health data structure
 str(my.data)

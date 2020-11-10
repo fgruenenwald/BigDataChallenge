@@ -63,10 +63,12 @@ write.csv(obesityFrance,
 
 
 #===============================================================================
-#---------------------------------For Fast Food Restaurant--------------------------------------------------------------------
+#---------------------------------For Fast Food Restaurant----------------------
 
 # Loading the Fast Food restaurant graph
-fastFood <- read.csv(file = 'C:/Users/F.R.I.E.N.D.S/Desktop/BigDataChallange/fastFoodRestaurant.csv')
+fastFood <- read.csv(file = paste(path.data.raw,'fastFoodRestaurant.csv', 
+                                  sep = "" ))
+
 # check the column of our data
 names(fastFood)
 
@@ -99,13 +101,13 @@ fastFoodCleanDate
 
 
 # Creating another table with the improved date from above
-fastFoodClean <- data.frame(name = fastFood$name, 
-                            dateEstablished = fastFoodCleanDate, 
-                            address = fastFood$address,
-                            city = fastFood$city, 
-                            country = fastFood$country)
+fastFoodClean <- data.frame(name = fastFood$name, dateEstablished = fastFood$dateAdded, city = fastFood$city, country = fastFood$country, longitude = fastFood$longitude, latitude = fastFood$latitude)
+fastFoodClean$dateEstablished <- gsub('-.*', '', fastFoodClean$dateEstablished )
+head(fastFoodClean)
 
-
+write.csv(fastFoodClean, 
+          paste(path.data.clean,"fastFoodRestaurantClean.csv", sep = ""), 
+          row.names = FALSE)
 
 
 
