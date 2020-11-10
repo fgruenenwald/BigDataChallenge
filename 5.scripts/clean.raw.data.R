@@ -1,5 +1,6 @@
 
 #---------------Cleaning the world wide obesity data---------------------------
+obesity <-
 
 # Since our Obesity data has all the countries data, we filter the data
 # of the USA using the filter function.
