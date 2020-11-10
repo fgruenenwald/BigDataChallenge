@@ -1,0 +1,85 @@
+"","explanatory.variable.name","response.variable.name","explanatory.variable.code","response.variable.code","correlation.estimate","correlation.p_value"
+"cor","Fast-food restaurants, 2011","Adult obesity rate, 2012*","FFR11","PCT_OBESE_ADULTS12",-0.507598537982603,0.000143571711288216
+"cor1","Fast-food restaurants, 2016","Adult obesity rate, 2012*","FFR16","PCT_OBESE_ADULTS12",-0.501767079505565,0.000175996254877154
+"cor2","Fast-food restaurants (% change), 2011-16","Adult obesity rate, 2012*","PCH_FFR_11_16","PCT_OBESE_ADULTS12",-0.0365103719761006,0.799219755138501
+"cor3","Fast-food restaurants/1,000 pop, 2011","Adult obesity rate, 2012*","FFRPTH11","PCT_OBESE_ADULTS12",-0.467744334990612,0.000538310106268948
+"cor4","Fast-food restaurants/1,000 pop, 2016","Adult obesity rate, 2012*","FFRPTH16","PCT_OBESE_ADULTS12",-0.411211615625686,0.00272050438318747
+"cor5","Fast-food restaurants/1,000 pop (% change), 2011-16","Adult obesity rate, 2012*","PCH_FFRPTH_11_16","PCT_OBESE_ADULTS12",0.197382011538034,0.165031729367833
+"cor6","Full-service restaurants, 2011","Adult obesity rate, 2012*","FSR11","PCT_OBESE_ADULTS12",-0.536779942058241,4.8931239795175e-05
+"cor7","Full-service restaurants, 2016","Adult obesity rate, 2012*","FSR16","PCT_OBESE_ADULTS12",-0.533273658704777,5.59814235921551e-05
+"cor8","Full-service restaurants (% change), 2011-16","Adult obesity rate, 2012*","PCH_FSR_11_16","PCT_OBESE_ADULTS12",-0.277699357464118,0.0484954476538052
+"cor9","Full-service restaurants/1,000 pop, 2011","Adult obesity rate, 2012*","FSRPTH11","PCT_OBESE_ADULTS12",-0.695077166883239,1.51948584232076e-08
+"cor10","Full-service restaurants/1,000 pop, 2016","Adult obesity rate, 2012*","FSRPTH16","PCT_OBESE_ADULTS12",-0.707860135104997,6.2895571868618e-09
+"cor11","Full-service restaurants/1,000 pop (% change), 2011-16","Adult obesity rate, 2012*","PCH_FSRPTH_11_16","PCT_OBESE_ADULTS12",-0.10775675502867,0.451657274220355
+"cor12","Expenditures per capita, fast food, 2007*","Adult obesity rate, 2012*","PC_FFRSALES07","PCT_OBESE_ADULTS12",-0.25689387276001,0.0687922205917949
+"cor13","Expenditures per capita, fast food, 2012*","Adult obesity rate, 2012*","PC_FFRSALES12","PCT_OBESE_ADULTS12",0.0830583000077226,0.562283825026818
+"cor14","Expenditures per capita, restaurants, 2007*","Adult obesity rate, 2012*","PC_FSRSALES07","PCT_OBESE_ADULTS12",-0.622860675617748,1.05647887143927e-06
+"cor15","Expenditures per capita, restaurants, 2012*","Adult obesity rate, 2012*","PC_FSRSALES12","PCT_OBESE_ADULTS12",-0.577197711052015,9.25122014032284e-06
+"cor16","% White, 2010","Adult obesity rate, 2012*","PCT_NHWHITE10","PCT_OBESE_ADULTS12",0.172451212373414,0.226237654327141
+"cor17","% Black, 2010","Adult obesity rate, 2012*","PCT_NHBLACK10","PCT_OBESE_ADULTS12",0.258030006702577,0.0675325023091396
+"cor18","% Hispanic, 2010","Adult obesity rate, 2012*","PCT_HISP10","PCT_OBESE_ADULTS12",-0.323427050606064,0.0206087761296182
+"cor19","% Asian, 2010","Adult obesity rate, 2012*","PCT_NHASIAN10","PCT_OBESE_ADULTS12",-0.34871599002229,0.0121464101636699
+"cor20","% American Indian or Alaska Native, 2010","Adult obesity rate, 2012*","PCT_NHNA10","PCT_OBESE_ADULTS12",-0.100438359180066,0.483135989865715
+"cor21","% Hawaiian or Pacific Islander, 2010","Adult obesity rate, 2012*","PCT_NHPI10","PCT_OBESE_ADULTS12",-0.192109194338523,0.17684268473391
+"cor22","% Population 65 years or older, 2010","Adult obesity rate, 2012*","PCT_65OLDER10","PCT_OBESE_ADULTS12",0.190285805024523,0.181065684128569
+"cor23","% Population under age 18, 2010","Adult obesity rate, 2012*","PCT_18YOUNGER10","PCT_OBESE_ADULTS12",0.255685463616823,0.0701525341153004
+"cor24","Median household income, 2015","Adult obesity rate, 2012*","MEDHHINC15","PCT_OBESE_ADULTS12",-0.677044480055587,4.89543697764032e-08
+"cor25","Poverty rate, 2015","Adult obesity rate, 2012*","POVRATE15","PCT_OBESE_ADULTS12",0.537654030695608,4.73055433987631e-05
+"cor26","Persistent-poverty counties, 2010","Adult obesity rate, 2012*","PERPOV10","PCT_OBESE_ADULTS12",0.596997659143859,3.76178934066055e-06
+"cor27","Child poverty rate, 2015","Adult obesity rate, 2012*","CHILDPOVRATE15","PCT_OBESE_ADULTS12",0.513257956309587,0.000117409294132739
+"cor28","Persistent-child-poverty counties, 2010","Adult obesity rate, 2012*","PERCHLDPOV10","PCT_OBESE_ADULTS12",0.342728055806524,0.0138180451247949
+"cor29","Metro/nonmetro counties, 2010","Adult obesity rate, 2012*","METRO13","PCT_OBESE_ADULTS12",-0.278044999624661,0.0482048215952517
+"cor30","Population-loss counties, 2010","Adult obesity rate, 2012*","POPLOSS10","PCT_OBESE_ADULTS12",0.308598956494562,0.0275746390477958
+"cor31","Adult diabetes rate, 2008","Adult obesity rate, 2012*","PCT_DIABETES_ADULTS08","PCT_OBESE_ADULTS12",0.815507579289392,3.16907859027196e-13
+"cor32","Adult diabetes rate, 2013","Adult obesity rate, 2012*","PCT_DIABETES_ADULTS13","PCT_OBESE_ADULTS12",0.846351669834521,5.22876340976992e-15
+"cor33","Adult obesity rate, 2012*","Adult obesity rate, 2012*","PCT_OBESE_ADULTS12","PCT_OBESE_ADULTS12",1,0
+"cor34","Adult obesity rate, 2017*","Adult obesity rate, 2012*","PCT_OBESE_ADULTS17","PCT_OBESE_ADULTS12",0.915096213406683,5.80635419050071e-21
+"cor35","High schoolers physically active (%), 2017*","Adult obesity rate, 2012*","PCT_HSPA17","PCT_OBESE_ADULTS12",0.138270103769682,0.394844656085088
+"cor36","Recreation & fitness facilities, 2011","Adult obesity rate, 2012*","RECFAC11","PCT_OBESE_ADULTS12",-0.515154707489784,0.000109667113793528
+"cor37","Recreation & fitness facilities, 2016","Adult obesity rate, 2012*","RECFAC16","PCT_OBESE_ADULTS12",-0.524631586258651,7.75176680664213e-05
+"cor38","Recreation & fitness facilities (% change), 2011-16","Adult obesity rate, 2012*","PCH_RECFAC_11_16","PCT_OBESE_ADULTS12",-0.41221518671003,0.00264958529769334
+"cor39","Recreation & fitness facilities/1,000 pop, 2011","Adult obesity rate, 2012*","RECFACPTH11","PCT_OBESE_ADULTS12",-0.540917520012857,4.16643214566158e-05
+"cor40","Recreation & fitness facilities/1,000 pop, 2016","Adult obesity rate, 2012*","RECFACPTH16","PCT_OBESE_ADULTS12",-0.561439187093078,1.81765189772236e-05
+"cor41","Recreation & fitness facilities/1,000 pop (% change), 2011-16","Adult obesity rate, 2012*","PCH_RECFACPTH_11_16","PCT_OBESE_ADULTS12",-0.350506501202296,0.0116815887907525
+"cor42","Fast-food restaurants, 2011","Adult obesity rate, 2017*","FFR11","PCT_OBESE_ADULTS17",-0.556839563725594,2.19953555261644e-05
+"cor43","Fast-food restaurants, 2016","Adult obesity rate, 2017*","FFR16","PCT_OBESE_ADULTS17",-0.551486006919927,2.73649603157858e-05
+"cor44","Fast-food restaurants (% change), 2011-16","Adult obesity rate, 2017*","PCH_FFR_11_16","PCT_OBESE_ADULTS17",0.0147126144876127,0.918383798326116
+"cor45","Fast-food restaurants/1,000 pop, 2011","Adult obesity rate, 2017*","FFRPTH11","PCT_OBESE_ADULTS17",-0.554307874439759,2.44003060444878e-05
+"cor46","Fast-food restaurants/1,000 pop, 2016","Adult obesity rate, 2017*","FFRPTH16","PCT_OBESE_ADULTS17",-0.494574538827579,0.000225117624153304
+"cor47","Fast-food restaurants/1,000 pop (% change), 2011-16","Adult obesity rate, 2017*","PCH_FFRPTH_11_16","PCT_OBESE_ADULTS17",0.217076940412375,0.125987684561535
+"cor48","Full-service restaurants, 2011","Adult obesity rate, 2017*","FSR11","PCT_OBESE_ADULTS17",-0.578556381946455,8.71354180543592e-06
+"cor49","Full-service restaurants, 2016","Adult obesity rate, 2017*","FSR16","PCT_OBESE_ADULTS17",-0.575838225241793,9.81980395516395e-06
+"cor50","Full-service restaurants (% change), 2011-16","Adult obesity rate, 2017*","PCH_FSR_11_16","PCT_OBESE_ADULTS17",-0.329852345101041,0.0180887843927362
+"cor51","Full-service restaurants/1,000 pop, 2011","Adult obesity rate, 2017*","FSRPTH11","PCT_OBESE_ADULTS17",-0.634378744190953,5.77863028388982e-07
+"cor52","Full-service restaurants/1,000 pop, 2016","Adult obesity rate, 2017*","FSRPTH16","PCT_OBESE_ADULTS17",-0.66954361343784,7.7777758176499e-08
+"cor53","Full-service restaurants/1,000 pop (% change), 2011-16","Adult obesity rate, 2017*","PCH_FSRPTH_11_16","PCT_OBESE_ADULTS17",-0.178122624809518,0.211101163760443
+"cor54","Expenditures per capita, fast food, 2007*","Adult obesity rate, 2017*","PC_FFRSALES07","PCT_OBESE_ADULTS17",-0.359690696303314,0.009530177917448
+"cor55","Expenditures per capita, fast food, 2012*","Adult obesity rate, 2017*","PC_FFRSALES12","PCT_OBESE_ADULTS17",-0.0237343088354808,0.868693651939508
+"cor56","Expenditures per capita, restaurants, 2007*","Adult obesity rate, 2017*","PC_FSRSALES07","PCT_OBESE_ADULTS17",-0.660250317752224,1.35565554190054e-07
+"cor57","Expenditures per capita, restaurants, 2012*","Adult obesity rate, 2017*","PC_FSRSALES12","PCT_OBESE_ADULTS17",-0.60030614425555,3.21757868875007e-06
+"cor58","% White, 2010","Adult obesity rate, 2017*","PCT_NHWHITE10","PCT_OBESE_ADULTS17",0.190317140537291,0.180992503387989
+"cor59","% Black, 2010","Adult obesity rate, 2017*","PCT_NHBLACK10","PCT_OBESE_ADULTS17",0.192648768453646,0.175606768606755
+"cor60","% Hispanic, 2010","Adult obesity rate, 2017*","PCT_HISP10","PCT_OBESE_ADULTS17",-0.356288686781086,0.0102834043178703
+"cor61","% Asian, 2010","Adult obesity rate, 2017*","PCT_NHASIAN10","PCT_OBESE_ADULTS17",-0.38939465069162,0.00473829850726275
+"cor62","% American Indian or Alaska Native, 2010","Adult obesity rate, 2017*","PCT_NHNA10","PCT_OBESE_ADULTS17",0.103357032977229,0.470445433241058
+"cor63","% Hawaiian or Pacific Islander, 2010","Adult obesity rate, 2017*","PCT_NHPI10","PCT_OBESE_ADULTS17",-0.257691118073787,0.0679063140778089
+"cor64","% Population 65 years or older, 2010","Adult obesity rate, 2017*","PCT_65OLDER10","PCT_OBESE_ADULTS17",0.120060841690617,0.401361911996314
+"cor65","% Population under age 18, 2010","Adult obesity rate, 2017*","PCT_18YOUNGER10","PCT_OBESE_ADULTS17",0.303926911861709,0.0301403261566461
+"cor66","Median household income, 2015","Adult obesity rate, 2017*","MEDHHINC15","PCT_OBESE_ADULTS17",-0.581477985329097,7.65385963176024e-06
+"cor67","Poverty rate, 2015","Adult obesity rate, 2017*","POVRATE15","PCT_OBESE_ADULTS17",0.413124892576538,0.00258671893107322
+"cor68","Persistent-poverty counties, 2010","Adult obesity rate, 2017*","PERPOV10","PCT_OBESE_ADULTS17",0.52874940429565,6.64545968766783e-05
+"cor69","Child poverty rate, 2015","Adult obesity rate, 2017*","CHILDPOVRATE15","PCT_OBESE_ADULTS17",0.381858783701921,0.00569151422005224
+"cor70","Persistent-child-poverty counties, 2010","Adult obesity rate, 2017*","PERCHLDPOV10","PCT_OBESE_ADULTS17",0.269596619765449,0.0557270211359147
+"cor71","Metro/nonmetro counties, 2010","Adult obesity rate, 2017*","METRO13","PCT_OBESE_ADULTS17",-0.295923834577422,0.0349961244188926
+"cor72","Population-loss counties, 2010","Adult obesity rate, 2017*","POPLOSS10","PCT_OBESE_ADULTS17",0.378853835720801,0.00611598699504585
+"cor73","Adult diabetes rate, 2008","Adult obesity rate, 2017*","PCT_DIABETES_ADULTS08","PCT_OBESE_ADULTS17",0.721916670505096,2.25533271963597e-09
+"cor74","Adult diabetes rate, 2013","Adult obesity rate, 2017*","PCT_DIABETES_ADULTS13","PCT_OBESE_ADULTS17",0.756376777613618,1.37236475173222e-10
+"cor75","Adult obesity rate, 2012*","Adult obesity rate, 2017*","PCT_OBESE_ADULTS12","PCT_OBESE_ADULTS17",0.915096213406683,5.80635419050071e-21
+"cor76","Adult obesity rate, 2017*","Adult obesity rate, 2017*","PCT_OBESE_ADULTS17","PCT_OBESE_ADULTS17",1,0
+"cor77","High schoolers physically active (%), 2017*","Adult obesity rate, 2017*","PCT_HSPA17","PCT_OBESE_ADULTS17",0.168583142059616,0.298400476236528
+"cor78","Recreation & fitness facilities, 2011","Adult obesity rate, 2017*","RECFAC11","PCT_OBESE_ADULTS17",-0.523811501216249,7.99128385519666e-05
+"cor79","Recreation & fitness facilities, 2016","Adult obesity rate, 2017*","RECFAC16","PCT_OBESE_ADULTS17",-0.542575859964721,3.90410542369582e-05
+"cor80","Recreation & fitness facilities (% change), 2011-16","Adult obesity rate, 2017*","PCH_RECFAC_11_16","PCT_OBESE_ADULTS17",-0.414932914587718,0.00246568298368982
+"cor81","Recreation & fitness facilities/1,000 pop, 2011","Adult obesity rate, 2017*","RECFACPTH11","PCT_OBESE_ADULTS17",-0.459991259560778,0.000683594076339084
+"cor82","Recreation & fitness facilities/1,000 pop, 2016","Adult obesity rate, 2017*","RECFACPTH16","PCT_OBESE_ADULTS17",-0.500621696117642,0.000183099364851694
+"cor83","Recreation & fitness facilities/1,000 pop (% change), 2011-16","Adult obesity rate, 2017*","PCH_RECFACPTH_11_16","PCT_OBESE_ADULTS17",-0.352037491000532,0.0112963461814032

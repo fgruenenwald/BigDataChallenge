@@ -1,13 +1,12 @@
 #*******************************************************************************
 #VISUALIZING & ANALYZING FAST FOOD RESTAURANT DISTRIBUTION ACROSS THE USA
 #*******************************************************************************
+fastFoodClean <- read.csv(paste(path.data.clean, 'fastFoodRestaurantClean.csv',
+                                sep = ""))
+fastFood <- read.csv(file = paste(path.data.raw,'fastFoodRestaurant.csv', 
+                                  sep = "" ))
 
 
-# Trying to plot the graph of all the restaurant with their numbers. 
-# Since the list of restaurant was big this graph won't be useful, but
-# you can still make use this to see that some restaurant are opened more
-# than others.
-plot(table(df), ylab = 'Frequency', ylim = c(0, 1000))
 
 # creating a frequency table with years from 2014 to 2019
 # and the total number of restaurants

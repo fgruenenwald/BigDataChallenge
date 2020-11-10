@@ -87,7 +87,10 @@ source(paste (wk.dir, "/", "5.scripts", "/", "visualizing.obesity.trends.R",
 source(paste (wk.dir, "/", "5.scripts", "/", 
               "visualizing.fastFoodRestaurants.R", 
               sep = ""))
-source(paste (wk.dir, "/", "5.scripts", "/", "FoodEnvironment.R", sep = ""))
+
+#consider confounding variables and other factors
+source(paste (wk.dir, "/", "5.scripts", "/", "VisualAnalyzeFoodEnvironment2.R",
+              sep = ""))
 
 # ==== end =====================================================================
 #===============================================================================
